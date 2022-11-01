@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="f.png" type="image/x-icon ">
         <title>大学生发疯页面</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <style>
             ul.a{list-style-type: square;}
             ul.b{list-style-type: disc;}
-           body {
+            body {
             background-image: url("c.jpg");
         }
         h1{
@@ -64,6 +65,7 @@
         </style>
     </head>
     <body>
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" width="100%" scrollamount="6" bgcolor="pink">今天你发疯了吗，如果没发疯，那说明你很棒，如果发疯了，就看看这个网页开心一下吧！</marquee>
         <h1>大学生哪有不发疯的，硬撑罢了！！！！！</h1>
         <h2>大学生不发疯，那还是大学生吗！？</h2>
         <h3 strong>目录</h3>
@@ -78,8 +80,10 @@
         <p>“说的对，但是在亚洲，一分钟就过去了六十秒。据统计，在中国未婚先孕的都是女性。要是一个人每天节约一包烟钱，十天就节约了十包。谁能想到，一个十六岁的花季少女四年前只有十二岁? 00后至今无人活到25。”</p>
         <p>“再说一遍，这可不是什么椰子，这种水果叫做蓝莓，俗称苹果。生长在撒哈拉沙漠的雨林地带。因外形酷似企鹅，所以我们又喜欢叫他北极熊。你们这些人，连仙人掌都不知道，就不要乱说他是木瓜好吗？再说一遍这个橘子叫做猕猴桃。”</p1>
         <p>你为什么不回答我?你为什么又在用那一套话术敷衍我?你在乎过我的感受吗?反正我为我们主播花的钱都被你们抽去一半了，你们也从来不觉得我值得尊重。我就是那么可笑，我总是来找你们解决问题，我就那么轻易地交付了我的信任，但你们总是这么敷衍我，因为我不重要!因为你们不在乎我</p2>
-        <h4 id="puture">要不你按一下这个奇怪的图片</H4>
-        <a href="2.html"><img alt="这里本该出现一个帅哥" src="shuai.jpg" width="150px"></a><br>
+        <div>
+            <h4 id="puture">要不你按一下这个奇怪的图片</H4>
+                <a href="2.html"><img alt="这里本该出现一个帅哥" src="shuai.jpg" width="150px"></a><br>
+        </div>
         <h4 id="mune">不存在的菜单</h4>
         <ul class="a">
             <li>卤煮卤鸭</li>
@@ -118,10 +122,28 @@
         <h4 id="xuan">一些奇怪的选项</h4>
         <p>发疯网页访问人员</p>
         <form>
-            姓名：<input type="text" name="username"><br>
-            性别:男<input type="radio" name="sex"> 女<input type="radio" name="sex"> 未知<input type="radio" name="sex"> 以上都是<input type="radio" name="sex"><br>
-            近期发疯行为（多选）:胡言乱语<input type="checkbox" name="choose"> 放弃学习<input type="checkbox" name="choose"> 神志不清<input type="checkbox" name="choose">天天想死<input type="checkbox" name="choose"><br>
-            <input type="checkbox" name="feng" checked>v作者50开通发疯网会员
+            姓名：
+            <input type="text" name="username"><br>
+            性别:
+            <label for="nan">男</label> <input type="radio" name="sex" id="nan">
+                 <label for="nv">女</label><input type="radio" name="sex" id="nv">
+                 <label for="weizhi">未知</label><input type="radio" name="sex" id="weizhi">
+                 <label for="doushi"> 以上都是</label><input type="radio" name="sex" id="doushi"><br>
+            近期发疯行为（多选）:
+            <label for="hu">胡言乱语</label><input type="checkbox" name="choose" id="hu"> 
+            <label for="fangqi">放弃学习</label><input type="checkbox" name="choose" id="fangqi">
+            <label for="shen">神志不清</label> <input type="checkbox" name="choose" id="shen">
+            <label for="si">天天想死</label> <input type="checkbox" name="choose" id="si"><br>
+            你是哪里人：
+            <select>
+                <option selected="selected">不是人</option>
+                <option>地球人</option>
+                <option>小洋人</option>
+                <option>外星人</option>
+                <option>不死人</option>
+            </select><br>
+            <input type="checkbox" name="feng" checked>v作者50开通发疯网会员<br>
+            <input type="submit" value="马上开通会员">
         </form>
     </body>
 </html>
